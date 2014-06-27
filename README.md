@@ -6,7 +6,7 @@ Install python packages:
 
 `pip install -r requirements.txt`
 
-Put the image files you want to upload in `img`-folder (or specify folder on execution)
+Put the image files you want to upload in an `img`-folder within the project-folder (or specify folder on execution)
 
 `python riakUpload.py`
 
