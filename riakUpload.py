@@ -29,6 +29,9 @@ def saveToRiak(key, json):
 
 # get and save all images
 for img in os.listdir(input_dir):
+  if img.startswith('.'):
+    continue
+
   img_path = os.path.join(input_dir, img)
   print 'Uploading %s' % img_path
   im = Image.open(img_path)
